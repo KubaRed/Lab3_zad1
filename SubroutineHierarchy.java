@@ -126,7 +126,7 @@ public class SubroutineHierarchy extends JPanel {
 		g2.drawLine( -4, 1 , -3, 3 );
 		g2.drawLine( -3, 3 , -1, 4 );
 		
-		//szprychy
+		
 		g2.drawLine( -1, 4 , 1,-4 );
 		g2.drawLine(  1, 4 ,-1,-4 );
 		g2.drawLine( 3, 3 , -3, -3 );
