@@ -50,16 +50,16 @@ public class SubroutineHierarchy extends JPanel {
 		// TODO: Draw the content of the scene.
 		//	 (Graphics2D g2, skala_x ,  skala_y, 
 	    //	 translate_x , translate_y , color )
-		rotatingPolygon(g2, 0.15,0.15, -1.02, -0.05);
-		rotatingPolygon(g2, 0.15,0.15, 1.04, -0.98);
-		rotatingPolygon(g2, 0.13,0.13, -1.379, 1.40);
-		rotatingPolygon(g2, 0.13,0.13, -3.13, 2.23);
-		rotatingPolygon(g2, 0.08,0.08, 0.9, 2.05);
-		rotatingPolygon(g2, 0.08,0.08, 2.12, 1.45);
+		Polygon(g2, 0.15,0.15, -1.02, -0.05);
+		Polygon(g2, 0.15,0.15, 1.04, -0.98);
+		Polygon(g2, 0.13,0.13, -1.379, 1.40);
+		Polygon(g2, 0.13,0.13, -3.13, 2.23);
+		Polygon(g2, 0.08,0.08, 0.9, 2.05);
+		Polygon(g2, 0.08,0.08, 2.12, 1.45);
 		
-		S_Line(g2,1,1.05, 0, -0.5);
-		S_Line(g2,0.85,0.95, -2.65, 1.90);
-		S_Line(g2,0.6,0.70, 2.5, 2.5);
+		ScLine(g2,1,1.05, 0, -0.5);
+		ScLine(g2,0.85,0.95, -2.65, 1.90);
+		ScLine(g2,0.6,0.70, 2.5, 2.5);
 		
 		
 		Triangle(g2 ,0.25,0.5,0,-2,Color.BLUE);
@@ -78,7 +78,7 @@ public class SubroutineHierarchy extends JPanel {
 		// TODO: If other updates are needed for the next frame, do them here.
 	}
 		// TODO: Define methods for drawing objects in the scene.
-	private void S_Line (Graphics2D g2,double skala_x , double skala_y, double translate_x ,double translate_y  )
+	private void ScLine (Graphics2D g2,double skala_x , double skala_y, double translate_x ,double translate_y  )
 	{
 		AffineTransform saveTransform = g2.getTransform();
 		g2.scale(skala_x,skala_y);
@@ -105,7 +105,7 @@ public class SubroutineHierarchy extends JPanel {
     	g2.setTransform(saveTransform);
     }
 	
-	private void rotatingPolygon(Graphics2D g2,double skala_x , double skala_y, double translate_x ,double translate_y) // polygon
+	private void Polygon(Graphics2D g2,double skala_x , double skala_y, double translate_x ,double translate_y) // polygon
 	{ 
 		AffineTransform saveTransform = g2.getTransform();
 		Color saveColor = g2.getColor();
